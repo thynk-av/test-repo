@@ -8,12 +8,6 @@ pipeline {
 
     stages {
 
-        stage('Pull Code') {
-            steps {
-                git 'https://github.com/thynk-av/test-repo.git'
-            }
-        }
-
         stage('Install Dependencies') {
             steps {
                 sh 'pip install -r requirements.txt'
